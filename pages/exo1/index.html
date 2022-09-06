@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercice 1</title>
+  <!-- Global -->
+  <script src="../../assets/scripts/global.js" defer></script>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  
+  <!-- JAVASCRIPT et CSS spécifique à cette page -->
+  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body class="exo1">
+  <div class="bg">
+    <div class="bg-conteneur">
+      <img src="../../assets/images/fx.svg" alt="" />
+      <img src="../../assets/images/electricity.svg" alt="" />
+      <img src="../../assets/images/gauge-electricity.svg" alt="" />
+      <img src="../../assets/images/operator.svg" alt="" />
+    </div>
+  </div>
+
+  <header>
+    <button class="verre" id="toggleNav">
+      <img src="../../assets/images/hamburger-menu.svg" alt="" />
+    </button>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><span class="lien-actif">Exercice 1</span></li>
+        <li><a href="../exo2/index.html">Exercice 2</a></li>
+        <li><a href="../exo3/index.html">Exercice 3</a></li>
+        <li><a href="../exo4/index.html">Exercice 4</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteneur">
+    <div class="carte">
+      <h1 class="title">Resolution d'une équation du second degré dans R</h1>
+      <p class="description">
+        Entrer les trois constantes et cliquer sur résoudre :
+      </p>
+
+      <div class="conteneurInput">
+        <div class="inputDiv">
+          <label for="A">A :</label>
+          <input type="number" name="A" id="A" class="input" />
+        </div>
+
+        <div class="inputDiv">
+          <label for="B">B :</label>
+          <input type="number" name="B" id="B" class="input" />
+        </div>
+
+        <div class="inputDiv">
+          <label for="C">C :</label>
+          <input type="number" name="C" id="C" class="input" />
+        </div>
+      </div>
+
+      <button id="boutonResoudre" class="bouton">Résoudre</button>
+
+      <div class="conteneurSolution">
+        <h2 class="solutionTitre">Solutions :</h2>
+        <ul class="solutionListe">
+          <li class="solutionItem">
+            <span>X<sub>1</sub> = <span id="solution1" class="solution"></span></sp>
+          </li>
+          <li class="solutionItem">
+            <span>X<sub>2</sub> = <span id="solution2" class="solution"></span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

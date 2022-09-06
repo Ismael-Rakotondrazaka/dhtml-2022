@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 2</title>
+    <!-- Global -->
+    <script src="../../assets/scripts/global.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+
+    <!-- JAVASCRIPT et CSS spécifique à cette page -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="exo2">
+    <div class="bg">
+      <div class="bg-conteneur">
+        <img src="../../assets/images/fx.svg" alt="" />
+        <img src="../../assets/images/electricity.svg" alt="" />
+        <img src="../../assets/images/gauge-electricity.svg" alt="" />
+        <img src="../../assets/images/operator.svg" alt="" />
+      </div>
+    </div>
+
+    <header>
+      <button class="verre" id="toggleNav">
+        <img src="../../assets/images/hamburger-menu.svg" alt="" />
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="../exo1/index.html">Exercice 1</a></li>
+          <li><span class="lien-actif">Exercice 2</span></li>
+          <li><a href="../exo3/index.html">Exercice 3</a></li>
+          <li><a href="../exo4/index.html">Exercice 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteneur">
+      <div class="carte">
+        <h1 class="title">
+          Resolution d'une équation de système linéaire à trois inconnus
+        </h1>
+        <p class="description">
+          Entrer les constantes et cliquer sur résoudre :
+        </p>
+
+        <div class="conteneurInput">
+          <div class="inputLigne">
+            <div class="inputDiv">
+              <span>
+                <input type="number" name="A11" id="A11" class="input" />
+                <label for="A11">x1 + </label>
+              </span>
+
+              <span>
+                <input type="number" name="A12" id="A12" class="input" />
+                <label for="A12">x2 + </label>
+              </span>
+
+              <span>
+                <input type="number" name="A13" id="A13" class="input" />
+                <label for="A13">x3</label>
+              </span>
+
+              <span>
+                =
+                <span>
+                  <input type="number" name="B1" id="B1" class="input" />
+                </span>
+              </span>
+            </div>
+
+            <div class="inputLigne">
+              <div class="inputDiv">
+                <span>
+                  <input type="number" name="A21" id="A21" class="input" />
+                  <label for="A21">x1 + </label>
+                </span>
+
+                <span>
+                  <input type="number" name="A22" id="A22" class="input" />
+                  <label for="A22">x2 + </label>
+                </span>
+
+                <span>
+                  <input type="number" name="A23" id="A23" class="input" />
+                  <label for="A23">x3</label>
+                </span>
+
+                <span>
+                  =
+                  <span>
+                    <input type="number" name="B2" id="B2" class="input" />
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div class="inputLigne">
+              <div class="inputDiv">
+                <span>
+                  <input type="number" name="A31" id="A31" class="input" />
+                  <label for="A31">x1 + </label>
+                </span>
+
+                <span>
+                  <input type="number" name="A32" id="A32" class="input" />
+                  <label for="A32">x2 + </label>
+                </span>
+
+                <span>
+                  <input type="number" name="A33" id="A33" class="input" />
+                  <label for="A33">x3</label>
+                </span>
+
+                <span>
+                  =
+                  <span>
+                    <input type="number" name="B3" id="B3" class="input" />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="boutonResoudre" class="bouton">Résoudre</button>
+
+        <div class="conteneurSolution">
+          <h2 class="solutionTitre">Solutions :</h2>
+          <ul class="solutionListe">
+            <li class="solutionItem">
+              <span
+                >X<sub>1</sub> = <span id="solution1" class="solution"></span
+              ></span>
+            </li>
+            <li class="solutionItem">
+              <span
+                >X<sub>2</sub> = <span id="solution2" class="solution"></span
+              ></span>
+            </li>
+            <li class="solutionItem">
+              <span
+                >X<sub>3</sub> = <span id="solution3" class="solution"></span
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 3</title>
+    <!-- Global -->
+    <script src="../../assets/scripts/global.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+
+    <!-- JAVASCRIPT et CSS spécifique à cette page -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="exo3">
+    <div class="bg">
+      <div class="bg-conteneur">
+        <img src="../../assets/images/fx.svg" alt="" />
+        <img src="../../assets/images/electricity.svg" alt="" />
+        <img src="../../assets/images/gauge-electricity.svg" alt="" />
+        <img src="../../assets/images/operator.svg" alt="" />
+      </div>
+    </div>
+
+    <header>
+      <button class="verre" id="toggleNav">
+        <img src="../../assets/images/hamburger-menu.svg" alt="" />
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="../exo1/index.html">Exercice 1</a></li>
+          <li><a href="../exo2/index.html">Exercice 2</a></li>
+          <li><span class="lien-actif">Exercice 3</span></li>
+          <li><a href="../exo4/index.html">Exercice 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteneur">
+      <div class="carte">
+        <h1 class="title">Etude de circuit électrique</h1>
+        <p>Entrer les constantes et cliquer sur résoudre :</p>
+
+        <div class="conteneurCorps">
+          <figure class="illustration-circuit">
+            <img src="../../assets/images/circuit.png" alt="Circuit" />
+            <figcaption>
+              Noter que U<sub>3</sub> est la tension aux bornes de R<sub>4</sub>
+            </figcaption>
+          </figure>
+          <div class="conteneurInput">
+            <div class="inputDiv">
+              <label for="R1">R<sub>1</sub> :</label>
+              <input type="number" name="R1" id="R1" class="input" />
+            </div>
+
+            <div class="inputDiv">
+              <label for="R2">R<sub>2</sub> :</label>
+              <input type="number" name="R2" id="R2" class="input" />
+            </div>
+
+            <div class="inputDiv">
+              <label for="R3">R<sub>3</sub> :</label>
+              <input type="number" name="R3" id="R3" class="input" />
+            </div>
+
+            <div class="inputDiv">
+              <label for="R4">R<sub>4</sub> :</label>
+              <input type="number" name="R4" id="R4" class="input" />
+            </div>
+
+            <div class="inputDiv">
+              <label for="UDA">U<sub>DA</sub>: </label>
+              <input type="number" name="UDA" id="UDA" class="input" />
+            </div>
+          </div>
+        </div>
+
+        <button id="boutonResoudre" class="bouton">Résoudre</button>
+
+        <div class="conteneurSolution">
+          <h2 class="solutionTitre">Solutions :</h2>
+          <ul class="solutionListe">
+            <li class="solutionItem">
+              <span
+                >I<sub>1</sub> = <span id="I1" class="solution"></span> A</span
+              >
+            </li>
+            <li class="solutionItem">
+              <span
+                >I<sub>2</sub> = <span id="I2" class="solution"></span> A</span
+              >
+            </li>
+            <li class="solutionItem">
+              <span
+                >I<sub>3</sub> = <span id="I3" class="solution"></span> A</span
+              >
+            </li>
+            <li class="solutionItem">
+              <span
+                >U<sub>1</sub> = <span id="U1" class="solution"></span> V</span
+              >
+            </li>
+            <li class="solutionItem">
+              <span
+                >U<sub>2</sub> = <span id="U2" class="solution"></span> V</span
+              >
+            </li>
+            <li class="solutionItem">
+              <span
+                >U<sub>3</sub> = <span id="U3" class="solution"></span> V</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

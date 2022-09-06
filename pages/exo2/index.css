@@ -1,0 +1,9 @@
+.exo2 input {
+  max-width: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .exo2 input {
+    max-width: 3rem;
+  }
+}

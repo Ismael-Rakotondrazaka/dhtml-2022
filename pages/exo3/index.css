@@ -1,0 +1,36 @@
+.illustration-circuit {
+  width: 100%;
+}
+
+.conteneurCorps {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.illustration-circuit {
+  width: 50%;
+}
+
+.illustration-circuit img {
+  width: 100%;
+}
+
+.conteneurInput {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .conteneurCorps {
+    flex-wrap: wrap;
+  }
+
+  .illustration-circuit {
+    width: 100%;
+  }
+
+  .conteneurInput {
+    width: 100%;
+  }
+}

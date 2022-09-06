@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="./assets/scripts/global.js" defer></script>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="bg-conteneur">
+        <img src="./assets/images/fx.svg" alt="" />
+        <img src="./assets/images/electricity.svg" alt="" />
+        <img src="./assets/images/gauge-electricity.svg" alt="" />
+        <img src="./assets/images/operator.svg" alt="" />
+      </div>
+    </div>
+
+    <header>
+      <button class="verre" id="toggleNav">
+        <img src="./assets/images/hamburger-menu.svg" alt="" />
+      </button>
+      <nav>
+        <ul>
+          <li><span class="lien-actif">Accueil</span></li>
+          <li><a href="./pages/exo1/index.html">Exercice 1</a></li>
+          <li><a href="./pages/exo2/index.html">Exercice 2</a></li>
+          <li><a href="./pages/exo3/index.html">Exercice 3</a></li>
+          <li><a href="./pages/exo4/index.html">Exercice 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="section">
+        <h1 class="titre-section">Le project</h1>
+        <p class="description-section">
+          Ce project a été créé pour mettre en pratique les connaissances
+          acquises durant l'année universitaire 2021-2022 sur le sujet :
+          <em>"Dynamique HTML et JavaScript pour le web"</em>.
+        </p>
+      </div>
+
+      <div class="section">
+        <h1 class="titre-section">Les exercices</h1>
+        <p class="description-section">
+          Le project consiste à traiter quatres exercices différents sur des
+          themes distincts. Ces exercices sont listés ci-dessous.
+        </p>
+
+        <div class="exercice-list">
+          <div class="carte-exercice verre exercice-item">
+            <div class="decoration">
+              <div class="carre-1 decoration-item"></div>
+              <div class="carre-2 decoration-item"></div>
+            </div>
+            <div class="exercice-description">
+              <h2>Resolution d'une équation du second degré dans R</h2>
+              <a href="./pages/exo1/index.html" class="bouton">Voir</a>
+            </div>
+          </div>
+
+          <div class="carte-exercice verre exercice-item">
+            <div class="decoration">
+              <div class="cercle-2 decoration-item"></div>
+              <div class="cercle-3 decoration-item"></div>
+            </div>
+            <div class="exercice-description">
+              <h2>
+                Resolution d'une équation de système linéaire à trois inconnus
+              </h2>
+              <a href="./pages/exo2/index.html" class="bouton">Voir</a>
+            </div>
+          </div>
+
+          <div class="carte-exercice verre exercice-item">
+            <div class="decoration">
+              <div class="cercle-1 decoration-item"></div>
+              <div class="carre-3 decoration-item"></div>
+            </div>
+            <div class="exercice-description">
+              <h2>Etude d'un circuit électrique</h2>
+              <a href="./pages/exo3/index.html" class="bouton">Voir</a>
+            </div>
+          </div>
+
+          <div class="carte-exercice verre exercice-item">
+            <div class="decoration">
+              <div class="carre-4 decoration-item"></div>
+              <div class="carre-5 decoration-item"></div>
+            </div>
+            <div class="exercice-description">
+              <h2>Animation de panneaux publicitaires</h2>
+              <a href="./pages/exo4/index.html" class="bouton">Voir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h1 class="titre-section">Conception et design</h1>
+        <p class="description-section">
+          Les technologies utilisés pour créer le projet sont HTML
+          <i>(Hypertext Markup Language)</i>, CSS
+          <i>(Cascading Style Sheet)</i>, et JavaScript.
+        </p>
+        <p class="description-section">
+          Quant au design, il s'agit d'un design appelé
+          <em>"glassmorphism"</em>. Comme son nom l'indique, il accentue la
+          transparence pour un <em>effet glass</em>.
+        </p>
+        <p class="description-section">Les informations me concernant :</p>
+
+        <div class="profile-conteneur">
+          <div class="profile-carte">
+            <img src="./assets/images/medal-outlined.svg" alt="" />
+            <div class="carte">
+              <div class="profile-header">
+                <img src="./assets/images/logo-eni.png" alt="" />
+                <h2>Ecole Nationale d'Informatique</h2>
+              </div>
+              <div class="profile-main">
+                <ul>
+                  <li>Nom&nbsp;: <span class="valeur">RAKOTONDRAZAKA</span></li>
+                  <li>
+                    Prénoms&nbsp;: <span class="valeur">Fitia Ismael</span>
+                  </li>
+                  <li>Niveau&nbsp;: <span class="valeur">SSJ3 😎</span></li>
+                  <li>Matricule&nbsp;: <span class="valeur">1234 🤣</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
