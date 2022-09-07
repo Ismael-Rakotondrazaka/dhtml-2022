@@ -17,7 +17,7 @@
 
 #ecran img {
   width: 25rem;
-  max-width: calc(100vw - 1rem * 4);
+  max-width: calc(100vw - 1rem * 5);
   height: 25rem;
   object-fit: cover;
   position: absolute;
