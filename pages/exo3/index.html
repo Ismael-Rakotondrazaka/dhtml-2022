@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercice 3</title>
     <!-- Global -->
-    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <script src="../../assets/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
 
     <!-- JAVASCRIPT et CSS spécifique à cette page -->
     <script src="./index.js" defer></script>
@@ -40,7 +41,7 @@
     <main class="conteneur">
       <div class="carte">
         <h1 class="title">Etude de circuit électrique</h1>
-        <p>Entrer les constantes et cliquer sur résoudre :</p>
+        <p>Entrer les constantes et cliquer sur résoudre&nbsp;:</p>
 
         <div class="conteneurCorps">
           <figure class="illustration-circuit">
@@ -51,22 +52,22 @@
           </figure>
           <div class="conteneurInput">
             <div class="inputDiv">
-              <label for="R1">R<sub>1</sub> :</label>
+              <label for="R1">R<sub>1</sub>&nbsp;:</label>
               <input type="number" name="R1" id="R1" class="input" />
             </div>
 
             <div class="inputDiv">
-              <label for="R2">R<sub>2</sub> :</label>
+              <label for="R2">R<sub>2</sub>&nbsp;:</label>
               <input type="number" name="R2" id="R2" class="input" />
             </div>
 
             <div class="inputDiv">
-              <label for="R3">R<sub>3</sub> :</label>
+              <label for="R3">R<sub>3</sub>&nbsp;:</label>
               <input type="number" name="R3" id="R3" class="input" />
             </div>
 
             <div class="inputDiv">
-              <label for="R4">R<sub>4</sub> :</label>
+              <label for="R4">R<sub>4</sub>&nbsp;:</label>
               <input type="number" name="R4" id="R4" class="input" />
             </div>
 
@@ -80,7 +81,7 @@
         <button id="boutonResoudre" class="bouton">Résoudre</button>
 
         <div class="conteneurSolution">
-          <h2 class="solutionTitre">Solutions :</h2>
+          <h2 class="solutionTitre">Solutions&nbsp;:</h2>
           <ul class="solutionListe">
             <li class="solutionItem">
               <span
@@ -116,5 +117,28 @@
         </div>
       </div>
     </main>
+
+
+  <div class="conteneur">
+    <button id="toggle-code" class="bouton">
+      Afficher le code et les étapes
+    </button>
+
+    <div class="verre hidden" id="code-etape">
+      <div class="code-conteneur">
+        <h1>Code&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo3/code.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="code-conteneur">
+        <h1>Etapes&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo3/illustration.png" alt="">
+        </div>
+      </div>
+      </hr>
+    </div>
   </body>
 </html>

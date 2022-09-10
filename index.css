@@ -212,15 +212,18 @@
 .profile-conteneur {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: 2rem;
+  gap: 1rem;
 }
 
 .profile-carte {
   width: 100%;
   max-width: 30rem;
+  position: relative;
 }
 
 .profile-carte > img:nth-child(1) {
@@ -280,4 +283,32 @@
   .profile-header h2 {
     font-size: large;
   }
+}
+
+/*
+  section 4
+*/
+
+.section-4 h2 {
+  color: #ffffff;
+  font-size: larger;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.illustration-dossier {
+  max-width: 100vw;
+}
+
+.illustration-dossier img {
+  max-width: 768px;
+  width: 100%;
+}
+
+.etape {
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 999px;
+  background-color: rgb(57, 205, 57);
+  padding: 0.3rem 0.7rem;
 }

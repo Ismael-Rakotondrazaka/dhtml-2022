@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercice 2</title>
     <!-- Global -->
-    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <script src="../../assets/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
 
     <!-- JAVASCRIPT et CSS spécifique à cette page -->
     <script src="./index.js" defer></script>
@@ -43,7 +44,7 @@
           Resolution d'une équation de système linéaire à trois inconnus
         </h1>
         <p class="description">
-          Entrer les constantes et cliquer sur résoudre :
+          Entrer les constantes et cliquer sur résoudre&nbsp;:
         </p>
 
         <div class="conteneurInput">
@@ -129,7 +130,7 @@
         <button id="boutonResoudre" class="bouton">Résoudre</button>
 
         <div class="conteneurSolution">
-          <h2 class="solutionTitre">Solutions :</h2>
+          <h2 class="solutionTitre">Solutions&nbsp;:</h2>
           <ul class="solutionListe">
             <li class="solutionItem">
               <span
@@ -150,5 +151,27 @@
         </div>
       </div>
     </main>
+
+  <div class="conteneur">
+    <button id="toggle-code" class="bouton">
+      Afficher le code et les étapes
+    </button>
+
+    <div class="verre hidden" id="code-etape">
+      <div class="code-conteneur">
+        <h1>Code&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo2/code.png" alt="">
+        </div>
+      </div>
+
+      <div class="code-conteneur">
+        <h1>Etapes&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo2/illustration.jpg" alt="">
+        </div>
+      </div>
+      </hr>
+    </div>
   </body>
 </html>

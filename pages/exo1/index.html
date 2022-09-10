@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exercice 1</title>
   <!-- Global -->
-  <link rel="stylesheet" href="../../assets/css/global.css">
-  
+  <script src="../../assets/scripts/index.js" defer></script>
+  <link rel="stylesheet" href="../../assets/styles/global.css">
+
   <!-- JAVASCRIPT et CSS spécifique à cette page -->
   <script src="./index.js" defer></script>
   <link rel="stylesheet" href="./index.css" />
@@ -43,22 +44,22 @@
     <div class="carte">
       <h1 class="title">Resolution d'une équation du second degré dans R</h1>
       <p class="description">
-        Entrer les trois constantes et cliquer sur résoudre :
+        Entrer les trois constantes et cliquer sur résoudre&nbsp;:
       </p>
 
       <div class="conteneurInput">
         <div class="inputDiv">
-          <label for="A">A :</label>
+          <label for="A">A&nbsp;:</label>
           <input type="number" name="A" id="A" class="input" />
         </div>
 
         <div class="inputDiv">
-          <label for="B">B :</label>
+          <label for="B">B&nbsp;:</label>
           <input type="number" name="B" id="B" class="input" />
         </div>
 
         <div class="inputDiv">
-          <label for="C">C :</label>
+          <label for="C">C&nbsp;:</label>
           <input type="number" name="C" id="C" class="input" />
         </div>
       </div>
@@ -66,7 +67,7 @@
       <button id="boutonResoudre" class="bouton">Résoudre</button>
 
       <div class="conteneurSolution">
-        <h2 class="solutionTitre">Solutions :</h2>
+        <h2 class="solutionTitre">Solutions&nbsp;:</h2>
         <ul class="solutionListe">
           <li class="solutionItem">
             <span>X<sub>1</sub> = <span id="solution1" class="solution"></span></sp>
@@ -78,6 +79,27 @@
       </div>
     </div>
   </main>
+
+  <div class="conteneur">
+    <button id="toggle-code" class="bouton">
+      Afficher le code et les étapes
+    </button>
+
+    <div class="verre hidden" id="code-etape">
+      <div class="code-conteneur">
+        <h1>Code&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo1/code.png" alt="">
+        </div>
+      </div>
+      
+      <div class="code-conteneur">
+        <h1>Etapes&nbsp;:</h1>
+        <div>
+          <img src="../../assets/images/exo1/illustration.png" alt="">
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

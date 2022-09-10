@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet JavaScript</title>
-    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./index.css" />
 
     <script src="./index.js" defer></script>
@@ -40,7 +40,7 @@
         <h1 class="titre-section">Le project</h1>
         <p class="description-section">
           Ce project a été créé pour mettre en pratique les connaissances
-          acquises durant l'année universitaire 2021-2022 sur le sujet :
+          acquises durant l'année universitaire 2021-2022 sur le sujet&nbsp;:
           <em>"Dynamique HTML et JavaScript pour le web"</em>.
         </p>
       </div>
@@ -113,7 +113,9 @@
           <em>"glassmorphism"</em>. Comme son nom l'indique, il accentue la
           transparence pour un <em>effet glass</em>.
         </p>
-        <p class="description-section">Les informations me concernant :</p>
+        <p class="description-section">
+          Les informations concernant notre groupe&nbsp;:
+        </p>
 
         <div class="profile-conteneur">
           <div class="profile-carte">
@@ -125,7 +127,9 @@
               </div>
               <div class="profile-main">
                 <ul>
-                  <li>Nom&nbsp;: <span class="valeur">RAKOTONDRAZAKA</span></li>
+                  <li>
+                    Nom&nbsp;: <span class="valeur">RAKOTONDRAZAKA</span>
+                  </li>
                   <li>
                     Prénoms&nbsp;: <span class="valeur">Fitia Ismael</span>
                   </li>
@@ -135,7 +139,62 @@
               </div>
             </div>
           </div>
+
+          <div class="profile-carte">
+            <img src="./assets/images/medal-outlined.svg" alt="" />
+            <div class="carte">
+              <div class="profile-header">
+                <img src="./assets/images/logo-eni.png" alt="" />
+                <h2>Ecole Nationale d'Informatique</h2>
+              </div>
+              <div class="profile-main">
+                <ul>
+                  <li>Nom&nbsp;: <span class="valeur">RASOLOMANANA</span></li>
+                  <li>
+                    Prénoms&nbsp;:
+                    <span class="valeur">Herimanitra Olivier</span>
+                  </li>
+                  <li>Niveau&nbsp;: <span class="valeur">SSJ3 😎</span></li>
+                  <li>Matricule&nbsp;: <span class="valeur">1234 🤣</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="section section-4">
+        <h1 class="titre-section">Description du projet</h1>
+
+        <h2>Structure du projet</h2>
+        <div class="illustration-dossier">
+          <img src="./assets/images/screenshot-folder-structure.png" alt="" />
+        </div>
+        <p class="description-section">
+          Le point d'entrée <code>index.html</code> (élément
+          <span class="etape">1</span>) se trouve sur la racine du dossier,
+          ainsi que les fichiers JavaScript et CSS (qui sont
+          <code>index.js</code> et <code>index.css</code>) qui lui sont propres.
+        </p>
+        <p class="description-section">
+          Chaque exercice possède son propre dossier avec ses fichiers HTML,
+          JavaScript et CSS.
+          <br />
+          Tous se trouvent dans le dossier <code>/pages</code> (élément
+          <span class="etape">2</span>)
+        </p>
+        <p class="description-section">
+          Et le dossier <code>/assets</code> contient tous les fichiers globals,
+          c'est à dire les fichiers de CSS communs à toutes les pages, les
+          images qu'elles ont besoin, et les polices d'écriture utilisées.
+          (élément <span class="etape">3</span>)
+        </p>
+
+        <h2>Structure des pages d'exercice</h2>
+        <p class="description-section">
+          Chaque page d'exercice est divisée en deux parties: l'application de
+          l'exercice et les étapes illustrées du code JavaScript.
+        </p>
       </div>
     </main>
   </body>
