@@ -1,0 +1,28 @@
+services:
+  dhtml:
+    build: .
+    container_name: dhtml-2022
+    restart: always
+    labels:
+      - "traefik.enable=true"
+
+      # HTTP router
+      - "traefik.http.routers.dhtml.rule=Host(`dhtml-2022.ismaelrakoto.com`)"
+      - "traefik.http.routers.dhtml.entrypoints=web"
+      - "traefik.http.routers.dhtml.middlewares=dhtml-redirect"
+
+      - "traefik.http.middlewares.dhtml-redirect.redirectscheme.scheme=https"
+
+      # HTTPS router
+      - "traefik.http.routers.dhtml-secure.rule=Host(`dhtml-2022.ismaelrakoto.com`)"
+      - "traefik.http.routers.dhtml-secure.entrypoints=websecure"
+      - "traefik.http.routers.dhtml-secure.tls.certresolver=leresolver"
+
+      - "traefik.http.services.dhtml.loadbalancer.server.port=80"
+
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
